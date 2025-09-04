@@ -1,3 +1,72 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 * {
-    margin: 0;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* END RESET */
+
+.container {
+    display: grid;
+    grid: [row1-start] "sidebar header" 1fr 
+ [row1-end row2-start] "sidebar main-contents" 4fr [row2-end]
+ /        [col1-start] 250px 
+ [col1-end col2-start] 1fr [col2-end];
+}
+
+.header {
+    background-color: blue;
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: red;
+    grid-area: sidebar;
+}
+
+.main-contents {
+    background-color: yellow;
+    grid-area: main-contents;
 }
