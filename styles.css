@@ -68,10 +68,27 @@ h1, h2, h3, h4, h5, h6 {
     grid-area: header;
     display: grid;
     grid: repeat(2, 1fr) / 3fr 1fr;
+    padding: 20px 30px;
+}
+
+#search-input {
+    width: clamp(165px, 500px, 600px);
+    height: 25px;
+    border-radius: 25px;
+    padding: 0 10px;
+    border: none;
+    background-color: lightgray;
 }
 
 #search {
     grid-area: 1 / 1 / 2 / 2;
+}
+
+.search-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
 }
 
 .identifier {
@@ -96,21 +113,32 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar-title {
     grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 6px 20px;
+    display: grid;
+}
+
+.combo {
+    align-self: center;
 }
 
 .sidebar-menu {
     grid-area: 2 / 1 / 3 / 2;
 }
 
+
 li {
-    
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 6px 20px;
 }
 
 .icon {
     display: inline-block;
     width: 16px;
     height: 16px;
-    
+    margin-right: 10px;
 }
 
 .sidebar-menu > ul {
