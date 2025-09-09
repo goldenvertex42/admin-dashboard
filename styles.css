@@ -25,8 +25,9 @@ ul, ol {
 } 
 
 body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+    font-family: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
 img, picture, video, canvas, svg {
@@ -349,11 +350,11 @@ li {
 }
 
 .username {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
 }
 
 .text-under-username {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: #898989;
 }
 
